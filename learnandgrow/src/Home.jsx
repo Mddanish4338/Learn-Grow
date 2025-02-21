@@ -83,7 +83,7 @@ const Home = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden">
+          <div >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <Link
                 to="/login"
@@ -91,24 +91,31 @@ const Home = () => {
               >
                 Login
               </Link>
-              <Link
-                to="/signup/student"
-                className="block px-3 py-2 text-gray-800 hover:bg-gray-100"
-              >
-                Sign Up as Student
-              </Link>
-              <Link
-                to="/signup/trainer"
-                className="block px-3 py-2 text-gray-800 hover:bg-gray-100"
-              >
-                Sign Up as Trainer
-              </Link>
-              <Link
-                to="/signup/company"
-                className="block px-3 py-2 text-gray-800 hover:bg-gray-100"
-              >
-                Sign Up as Company
-              </Link>
+              <div className="relative group">
+                <button className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-gray-100">
+                  Sign Up
+                </button>
+                <div className="pl-4">
+                  <Link
+                    to="/signup/student"
+                    className="block px-3 py-2 text-gray-800 hover:bg-gray-100"
+                  >
+                    Sign Up as Student
+                  </Link>
+                  <Link
+                    to="/signup/trainer"
+                    className="block px-3 py-2 text-gray-800 hover:bg-gray-100"
+                  >
+                    Sign Up as Trainer
+                  </Link>
+                  <Link
+                    to="/signup/company"
+                    className="block px-3 py-2 text-gray-800 hover:bg-gray-100"
+                  >
+                    Sign Up as Company
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         )}

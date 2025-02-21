@@ -11,6 +11,10 @@ import CompanySignupForm from './pages/CompanySignupForm';
 import VerifyEmail from './pages/VerifyEmail';
 import Login from './pages/Login';
 import Home from './Home';
+import Dashboard from './trainer/Dashboard';
+import Profile from './trainer/Profile';
+import PostMentorship from './trainer/PostMentorship';
+import DisplayPosts from './trainer/DisplayPosts';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,6 +33,10 @@ function App() {
               <Route path="/verify-email" element={<VerifyEmail />} />
               <Route path="/login" element={<Login />} />
               <Route path="/" element={<Home />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/post-mentorship" element={<PostMentorship />} />
+              <Route path="/posts" element={<DisplayPosts />} />
               </Routes>
           </BrowserRouter>
 
