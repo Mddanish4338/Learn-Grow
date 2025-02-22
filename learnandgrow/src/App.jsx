@@ -15,6 +15,11 @@ import Dashboard from './trainer/Dashboard';
 import Profile from './trainer/Profile';
 import PostMentorship from './trainer/PostMentorship';
 import DisplayPosts from './trainer/DisplayPosts';
+import CDashBoard from './company/pages/dashboard';
+import CProfile from './company/pages/profile';
+import CPostJob from './company/pages/postJob';
+import CManageJobs from './company/pages/manageJobs';
+import CViewDetails from './company/components/viewDetails';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,6 +42,11 @@ function App() {
               <Route path="/profile" element={<Profile />} />
               <Route path="/post-mentorship" element={<PostMentorship />} />
               <Route path="/posts" element={<DisplayPosts />} />
+              <Route path="/company-dashboard" element={<CDashBoard />} />
+              <Route path="/company-post-job" element={<CPostJob />} />
+              <Route path="/company-manage-jobs" element={<CManageJobs />} />
+              <Route path="/company-job-details" element={<CViewDetails />} />
+              <Route path="/company-profile" element={<CProfile />} />
               </Routes>
           </BrowserRouter>
 
